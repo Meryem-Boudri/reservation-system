@@ -1,1 +1,33 @@
 <app-navbar></app-navbar>
+
+<div class="container">
+  <h2>Dashboard</h2>
+
+  <!-- Liste des séances -->
+  <h3>Liste des séances</h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Date</th>
+      <th>Jury</th>
+      <th>MaxParticipants</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let session of sessions">
+      <td>{{ session.id }}</td>
+      <td>{{ session.date }}</td>
+      <td>{{ session.jury }}</td>
+      <td>{{ session.maxParticipants }}</td>
+
+      <td>
+        <!-- Bouton pour réserver -->
+        <button class="btn btn-primary" (click)="reserveSession(session)">Réserver</button>
+        <!-- Bouton pour annuler une réservation (si déjà réservé) -->
+        <button *ngIf="session.reserved" class="btn btn-danger" (click)="cancelReservation(session)">Annuler</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
