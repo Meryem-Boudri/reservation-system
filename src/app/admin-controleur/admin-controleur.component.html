@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h2>Confirmer les Réservations</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">ID Réservation</th>
+      <th scope="col">Date</th>
+      <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let reservation of reservations">
+      <td>{{ reservation.name }}</td>
+      <td>{{ reservation.id }}</td>
+      <td>{{ reservation.date }}</td>
+      <td>
+        <button class="btn btn-success me-2" (click)="confirmReservation(reservation.id)">Confirmer</button>
+        <button class="btn btn-danger" (click)="refuserReservation(reservation.id)">Refuser</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

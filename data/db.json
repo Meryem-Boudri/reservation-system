@@ -1,0 +1,187 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "c04a",
+      "date": "2024-05-10",
+      "jury": "3",
+      "maxParticipants": 1
+    },
+    {
+      "id": "c8b0",
+      "date": "2024-05-10",
+      "jury": "3",
+      "maxParticipants": 1
+    },
+    {
+      "id": "2ef4",
+      "date": "2024-05-03",
+      "jury": "3",
+      "maxParticipants": 10
+    },
+    {
+      "id": "5df9",
+      "date": "2024-05-11",
+      "jury": "3",
+      "maxParticipants": 10
+    },
+    {
+      "0": {
+        "id": "c04a",
+        "date": "2024-05-10",
+        "jury": "3",
+        "maxParticipants": 1
+      },
+      "1": {
+        "id": "c8b0",
+        "date": "2024-05-10",
+        "jury": "3",
+        "maxParticipants": 1
+      },
+      "2": {
+        "id": "2ef4",
+        "date": "2024-05-03",
+        "jury": "3",
+        "maxParticipants": 10
+      },
+      "3": {
+        "id": "5df9",
+        "date": "2024-05-11",
+        "jury": "3",
+        "maxParticipants": 10
+      },
+      "id": "5bce"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "date": "2024-06-01",
+      "time": "18:00",
+      "partySize": 4,
+      "confirmed": false
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "date": "2024-06-02",
+      "time": "19:00",
+      "partySize": 2,
+      "confirmed": true
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "date": "2024-06-03",
+      "time": "20:00",
+      "partySize": 6,
+      "confirmed": false
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "date": "2024-06-04",
+      "time": "21:00",
+      "partySize": 3,
+      "confirmed": true
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "date": "2024-06-05",
+      "time": "17:00",
+      "partySize": 5,
+      "confirmed": false
+    },
+    {
+      "id": 6,
+      "name": "Diana Evans",
+      "date": "2024-06-06",
+      "time": "18:30",
+      "partySize": 2,
+      "confirmed": true
+    },
+    {
+      "id": 7,
+      "name": "Edward Wilson",
+      "date": "2024-06-07",
+      "time": "19:30",
+      "partySize": 4,
+      "confirmed": false
+    },
+    {
+      "id": 8,
+      "name": "Fiona Clark",
+      "date": "2024-06-08",
+      "time": "20:30",
+      "partySize": 3,
+      "confirmed": true
+    },
+    {
+      "id": 9,
+      "name": "George Harris",
+      "date": "2024-06-09",
+      "time": "21:30",
+      "partySize": 6,
+      "confirmed": false
+    },
+    {
+      "id": 10,
+      "name": "Helen Martin",
+      "date": "2024-06-10",
+      "time": "22:00",
+      "partySize": 2,
+      "confirmed": true
+    },
+    {
+      "id": "1fec",
+      "sessionId": "c8b0",
+      "name": "boudri meryem",
+      "email": "h",
+      "sessionName": "",
+      "date": "2024-05-10",
+      "time": ""
+    },
+    {
+      "id": "186c",
+      "sessionId": "c04a",
+      "name": "John Doe",
+      "email": "JohnDoe@gg",
+      "sessionName": "",
+      "date": "2024-05-10",
+      "time": ""
+    },
+    {
+      "id": "ad33",
+      "sessionId": "5df9",
+      "name": "John Doe",
+      "email": "JohnDoe@gg",
+      "sessionName": "",
+      "date": "2024-05-11",
+      "time": "",
+      "comfirmed": false
+    },
+    {
+      "id": "e34d",
+      "sessionId": "c8b0",
+      "name": "John Doe",
+      "email": "JohnDoe@gg",
+      "sessionName": "",
+      "date": "2024-05-10",
+      "time": "",
+      "comfirmed": false
+    }
+  ]
+}

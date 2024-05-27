@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h2>Reserve Session</h2>
+  <form (submit)="reserveSession()">
+    <div class="mb-3">
+      <label for="session" class="form-label">Session:</label>
+      <select id="session" [(ngModel)]="reservation.sessionId" name="session" class="form-select" required>
+        <option *ngFor="let session of sessions" [value]="session.id">{{ session.name }} - {{ session.date }} {{ session.time }}</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name:</label>
+      <input type="text" id="name" [(ngModel)]="reservation.name" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Your Email:</label>
+      <input type="email" id="email" [(ngModel)]="reservation.email" name="email" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Reserve</button>
+  </form>
+
+  <h2>Your Reservations</h2>
+  <table class="table table-striped mt-4">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Confirmed</th>
+      <th scope="col">Date</th>
+      <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let reservation of reservations">
+      <td>{{ reservation.name }}</td>
+      <td>{{ reservation.comfirmed }}</td>
+      <td>{{ reservation.date }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="cancelReservation(reservation.id)">Cancel</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
